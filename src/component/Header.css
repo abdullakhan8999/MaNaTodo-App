@@ -1,0 +1,9 @@
+@media (max-width: 786px) {
+  .fixed-top {
+    position: relative;
+  }
+  .navbar-brand {
+    position: absolute;
+    left: 35%;
+  }
+}
