@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/abdullakhan8999/MaNaTodo-App.git/static/css/main.ea8534fd.css",
+    "main.js": "/abdullakhan8999/MaNaTodo-App.git/static/js/main.c57cf151.js",
+    "index.html": "/abdullakhan8999/MaNaTodo-App.git/index.html",
+    "main.ea8534fd.css.map": "/abdullakhan8999/MaNaTodo-App.git/static/css/main.ea8534fd.css.map",
+    "main.c57cf151.js.map": "/abdullakhan8999/MaNaTodo-App.git/static/js/main.c57cf151.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea8534fd.css",
+    "static/js/main.c57cf151.js"
+  ]
+}
