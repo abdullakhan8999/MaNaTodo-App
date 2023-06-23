@@ -1,7 +1,5 @@
 # MaNaTodo App
 
-![GitHub](https://img.shields.io/github/license/abdullakhan8999/my-app)
-
 ## Description
 
 MaNaTodo App is a web application built using HTML, CSS, JavaScript, React.js, and Bootstrap. It provides a simple and intuitive interface for managing your daily tasks. Users can add, edit, mark, and delete todos. The app utilizes local storage to persist todos even when the page is reloaded.
@@ -26,6 +24,22 @@ To use the MaNaTodo App, follow these steps:
    ```
    npm start
    ```
+
+## Dependencies
+
+The following dependencies are used in the MaNaTodo App:
+
+- "@testing-library/jest-dom": "^5.16.5"
+- "@testing-library/react": "^13.4.0"
+- "@testing-library/user-event": "^13.5.0"
+- "react": "^18.2.0"
+- "react-dom": "^18.2.0"
+- "react-icons": "^4.8.0"
+- "react-modal": "^3.16.1"
+- "react-router-dom": "^6.11.2"
+- "react-scripts": "5.0.1"
+- "react-toastify": "^9.1.3"
+- "web-vitals": "^2.1.4"
 
 ## Usage
 
