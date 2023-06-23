@@ -10,7 +10,7 @@ To use the MaNaTodo App, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/abdullakhan8999/my-app.git
+   git clone https://github.com/abdullakhan8999/MaNaTodo-App.git
    ```
 2. Navigate to the project directory:
    ```
@@ -69,7 +69,7 @@ This project is licensed under the [ISC License](LICENSE).
 
 ## Issues
 
-If you encounter any issues or bugs, please report them [here](https://github.com/abdullakhan8999/my-app/issues).
+If you encounter any issues or bugs, please report them [here](https://github.com/abdullakhan8999/MaNaTodo-App/issues).
 
 ## Contact
 
