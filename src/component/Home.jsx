@@ -51,7 +51,7 @@ function Home({ setTodos, todos }) {
             <input
               name="todo"
               type="text"
-              className="form-control inputTitleAndDescription"
+              className="form-control fs-1"
               id="taskLabel"
               value={task}
               aria-describedby="taskHelp"
