@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TodoList from "./TodoList";
 import showNotification from "../Util/notifications";
+import "./Home.css";
 
 function Home({ setTodos, todos }) {
   const [task, setTask] = useState("");
@@ -40,17 +41,17 @@ function Home({ setTodos, todos }) {
   };
 
   return (
-    <section className="container mt-5 pt-3">
+    <section className="container-sm homeSection w-80">
       <div className="container ">
         <form>
           <div className="mb-3">
-            <label htmlFor="taskLabel" className="form-label">
+            <label htmlFor="taskLabel" className="form-label label-font">
               Task
             </label>
             <input
               name="todo"
               type="text"
-              className="form-control"
+              className="form-control inputTitleAndDescription"
               id="taskLabel"
               value={task}
               aria-describedby="taskHelp"
@@ -59,13 +60,13 @@ function Home({ setTodos, todos }) {
             <div id="taskHelp" className="form-text">
               We'll never share your data with anyone else.
             </div>
-            <label htmlFor="description" className="form-label">
+            <label htmlFor="description" className="form-label label-font">
               Description
             </label>
             <textarea
-              name="description"
+              name="description inputTitleAndDescription"
               rows={3}
-              className="form-control"
+              className="form-control label-font "
               id="description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
@@ -74,15 +75,30 @@ function Home({ setTodos, todos }) {
           <button
             type="submit"
             id="btnSubmit"
-            className="btn btn-primary"
+            className="btn btn-primary rounded submitBtn"
             onClick={handleSubmitTodo}
           >
             Submit
           </button>
         </form>
       </div>
-      <div className="container  mx-auto my-5">
-        {todos &&
+      <div className="container  mx-auto my-5 ">
+        {!todos.length ? (
+          <div className="container d-flex w-100 align-items-center">
+            <div className="w-50">
+              <h3 className="label-font">No Tasks Yet</h3>
+              <p className="inputTitleAndDescription">
+                Add your first task and get started on your to-do list!
+              </p>
+            </div>
+            <img
+              src="https://res.cloudinary.com/dwpi8ryr2/image/upload/v1687514687/samples/ecommerce/3226084_43029_gxyivg.jpg"
+              alt="addTodo"
+              className="w-50"
+            />
+          </div>
+        ) : (
+          // Render the todos using the map
           todos.map((todo) => (
             <TodoList
               todo={todo}
@@ -93,7 +109,9 @@ function Home({ setTodos, todos }) {
               isChecked={isChecked}
               setIsChecked={setIsChecked}
             />
-          ))}
+          ))
+        )}
+
         {!todos.length ? null : (
           <div>
             <button

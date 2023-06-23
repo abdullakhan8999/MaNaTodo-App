@@ -78,7 +78,9 @@ export default function TodoList({ todo, todos, setTodos, setTask }) {
       </div>
       <span
         className={`form-control ${
-          todo.isChecked ? "text-decoration-line-through" : ""
+          todo.isChecked
+            ? "text-decoration-line-through text-wrap  d-flex align-items-center "
+            : "d-flex align-items-center "
         }`}
         aria-describedby="button-addon2"
       >
@@ -86,7 +88,9 @@ export default function TodoList({ todo, todos, setTodos, setTask }) {
       </span>
       <span
         className={`form-control cursor-arrow  ${
-          todo.isChecked ? "text-decoration-line-through" : ""
+          todo.isChecked
+            ? "text-decoration-line-through  text-wrap d-flex align-items-center "
+            : "d-flex align-items-center "
         }`}
         aria-label="Enter your description"
         aria-describedby="button-addon2"
@@ -95,7 +99,7 @@ export default function TodoList({ todo, todos, setTodos, setTask }) {
       </span>
 
       <button
-        className="btn btn-warning z-0"
+        className="btn btn-warning z-0 "
         type="button"
         onClick={() => handleDeleteTodo(todo)}
         id="button-addon2"

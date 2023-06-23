@@ -1,9 +1,17 @@
-@media (max-width: 786px) {
-  .fixed-top {
-    position: relative;
-  }
-  .navbar-brand {
-    position: absolute;
-    left: 35%;
-  }
+.HeaderContainer {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  height: 5vmax;
+  background-color: #bee8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.HeaderContainer > b {
+  font-size: 2vmax;
 }

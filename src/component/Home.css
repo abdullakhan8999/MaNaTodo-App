@@ -1,0 +1,19 @@
+.label-font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vmax;
+}
+#taskHelp,
+.inputTitleAndDescription {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2vmax;
+}
+.submitBtn {
+  font-size: 1.8vmax;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 10vmax;
+  padding: 10px;
+}
+
+.homeSection {
+  margin-top: 10vmax;
+}

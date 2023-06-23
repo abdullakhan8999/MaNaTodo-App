@@ -1,9 +1,9 @@
-import { toast } from 'react-toastify';
+import { toast, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const showNotification = (message, type) => {
    toast(message, {
-      position: 'top-center',
+      position: 'top-right',
       autoClose: 3000,
       hideProgressBar: false,
       newestOnTop: false,
@@ -14,6 +14,7 @@ const showNotification = (message, type) => {
       pauseOnHover: true,
       theme: 'dark',
       type: type,
+      transition: Zoom,
    });
 };
 

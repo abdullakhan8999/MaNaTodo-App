@@ -1,4 +1,4 @@
-import React, {  useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Header from './component/Header'
 import Home from './component/Home.jsx'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
